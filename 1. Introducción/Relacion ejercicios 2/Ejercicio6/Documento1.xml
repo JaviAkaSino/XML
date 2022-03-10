@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<documento>
+
+	<p>Mi Primer 
+		<destacar importancia="1"> <!--valor de artibuto sin comillas-->
+			documento XML
+		</destacar>
+	</p> <!--p cerrado con ] en vez de con >-->
+	
+	<p>Comienza con la etiqueta &lt;documento&gt; </p> <!--Utiliza < en vez de &lt; -->
+	
+	<p>A continuacion colocamos un elemento sin
+	contenido</p>
+	
+	<!--imagen no cerrada-->
+	<imagen fichero="imagen.gif"/>
+	
+</documento>
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<factura nf="999">
+
+	<empresa cif="Q9876543">	
+		<nombre>Equipos Digitales S.L.</nombre>
+		<direccion cp="28015" ciudad="Madrid">Av. Valladolid</direccion>
+		<telefono tipo="fijo">91776688</telefono>
+		<telefono tipo="fax">91776699</telefono>	
+	</empresa>
+	
+	<pedido np="731">
+		<fecha>12-01-2005</fecha>
+		<pago>EFECTIVO</pago>
+	</pedido>
+	
+	<cliente nc="879">
+		<nombre>Darío Bueno Gutiérrez</nombre>
+		<direccion cp="28043" ciudad="Madrid" provincia="Madrid">Av. Oporto nº7 4ºD</direccion>
+	</cliente>
+	
+	
+
+</factura>

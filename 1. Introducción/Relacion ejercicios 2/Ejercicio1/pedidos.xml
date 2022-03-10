@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<pedido>
+
+	<destinatario direccion="Calle Barco 4, 3ºA">
+	
+		Juan Delgado Martínez
+		
+	</destinatario>
+	
+	<articulo code="A2023">Bicicleta</articulo>
+	
+	<fecha>19-5-2000</fecha>
+	
+</pedido>
