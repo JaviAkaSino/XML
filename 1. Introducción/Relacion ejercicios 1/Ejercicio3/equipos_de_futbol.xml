@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<equipos_de_futbol>
+
+	<equipo id="equipo1" nombre="Real Madrid" ciudad="Madrid" entrenador="">
+		
+		<jugador nombre="Van Nistelrooy" posicion="DC" nacionalidad="Holanda"/>
+		<jugador nombre="Robinho" posicion="LI" nacionalidad="Brazil"/>
+		
+	</equipo>
+	
+	<equipo id="equipo2" nombre="Atlético de Madrid" ciudad="Madrid" entrenador="">
+		
+		<jugador nombre="Fernando Torres" posicion="DC" nacionalidad="España"/>
+		<jugador nombre="Kun Agüero" posicion="DC" nacionalidad="Argentina"/>
+		
+	</equipo>
+
+
+</equipos_de_futbol>

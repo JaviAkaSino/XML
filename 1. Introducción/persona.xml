@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<persona profesion="cantante">	
+		<nombre>Elsa</nombre>	
+		<mujer/>		
+		<fecha_nacimiento>			
+			<dia>18</dia>
+			<mes>6</mes>
+			<anio>1996</anio>		
+		</fecha_nacimiento>
+		<ciudad>Pamplona</ciudad>
+	</persona>
