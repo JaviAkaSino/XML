@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding"UTF-8" ?>
+
+<cartelera>
+	<pelicula anio="2003" duracion="93">
+	<titulo pais="EEUU" titulo_original="Old School">AQUELLAS JUERGAS UNIVERSITARIA</titulo>
+	<director>Todd Phillips</director>
+	<interpretes>
+		<actor>Will Ferrell</actor>		
+		<actor>Luke Wilson</actor>	
+		<actor>Vince Vaughn</actor>	
+		<actor>Jeremy Piven</actor>	
+	</interpretes>
+	<sinopsis>
+		Mitch, Frank y Beanie son tres amigos treintañeros cuyas vidas no son exactamente lo que
+		esperaban. Mitch tiene una novia ninfómana que se mete en la cama con el primero
+		que agarra. Frank se ha casado y su matrimonio nada tiene que ver con
+		las juergas salvajes que organizaban años atrás. Y Beanie es un padre de familia que se
+		muere por recuperar su alocada juventud. Pero las cosas cambian cuando Beanie sugiere
+		que creen su propia fraternidad, en la nueva casa que Mitch tiene junto al campus de la
+		universidad. Una ocasión para revivir tiempos gloriosos, hacer nuevos amigos y de volver
+		a sus viejas, salvajes y desmadradas juergas de estudiantes.
+	</sinopsis>
+	<enlace>http://www.oldschool-themovie.com/</enlace>
+	<detalles>Comedia autorizada para mayores de 16 años</detalles>
+	<fichero_grafico></fichero_grafico>
+	</pelicula>
+	
+	<pelicula anio="2009" duracion="92">
+	<titulo pais="ES">SAW VI</titulo>
+	<director>Kevin Greutert</director>
+	<interpretes>
+		<actor>Tobin Bell</actor>		
+		<actor>Costas Mandylor</actor>	
+		<actor>Shawnee Smith</actor>	
+		<actor>Betsy Russell</actor>	
+	</interpretes>
+	<sinopsis>
+		El agente especial Strahm está muerto, y el detective Hoffman se ha erigido como único heredero 
+		del legado de Jigsaw. Sin embargo, cuando el FBI estrecha el círculo en torno a él, Hoffman se ve 
+		obligado a poner en marcha un juego con el que el gran plan de Jigsaw cobrará su sentido último.
+	</sinopsis>
+	<enlace>http://www.sawvi.com/</enlace>
+	<detalles>Thriller pendiente de clasificación</detalles>
+	<fichero_grafico>sawvi.zip</fichero_grafico>
+	</pelicula>
+	
+	<pelicula anio="1993" duracion="195">
+	<titulo pais="EEUU" titulo_original="Schlindler's List">La lista de Schindler</titulo>
+	<director>Steven Spielberg</director>
+	<interpretes>
+		<actor>Liam Neeson</actor>		
+		<actor>Ralph Fiennes</actor>	
+		<actor>Ben Kingsley</actor>	
+		<actor>Caroline Goodall</actor>	
+	</interpretes>
+	<sinopsis>
+	<enlace></enlace>
+	<detalles>Drama histórico autorizado para mayores de 18 años</detalles>
+	<fichero_grafico></fichero_grafico>
+	</pelicula>
+
+</cartelera>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<factura nf="999">
+<factura nf="999" moneda="EUR">
 
 	<empresa cif="Q9876543">	
 		<nombre>Equipos Digitales S.L.</nombre>
@@ -19,6 +19,39 @@
 		<direccion cp="28043" ciudad="Madrid" provincia="Madrid">Av. Oporto nº7 4ºD</direccion>
 	</cliente>
 	
+	<lista_productos moneda="EUR">
+		<producto ref="MII93000F/8" cantidad="1">
+			<descripcion>MICRO PENTIUM IV 3000MHZ FB800</descripcion>
+			<precio>230</precio>
+			<iva>16</iva>
+			<importe>266.80</importe>
+		</producto>
+		
+		<producto ref="MB8QDIP4" cantidad="1">
+			<descripcion></descripcion>
+			<precio>180</precio>
+			<iva>16</iva>
+			<importe>208.80</importe>
+		</producto>
+		
+		<producto ref="MEDD512M32" cantidad="2">
+			<descripcion></descripcion>
+			<precio>40</precio>
+			<iva>16</iva>
+			<importe>92.80</importe>
+		</producto>
+		
+		<producto ref="HD250GSA7" cantidad="4">
+			<descripcion></descripcion>
+			<precio>120</precio>
+			<iva>16</iva>
+			<importe>556.80</importe>
+		</producto>
+	</lista_productos>
 	
+	<importe total="1125.20">
+		<base>970</base>
+		<iva_total porcentaje="16">155.20</iva_total>
+	</importe>
 
 </factura>
