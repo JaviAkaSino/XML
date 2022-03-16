@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding"UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 
 <cartelera>
 	<pelicula anio="2003" duracion="93">
@@ -54,6 +54,8 @@
 		<actor>Caroline Goodall</actor>	
 	</interpretes>
 	<sinopsis>
+		Dirigido y coproducido por Steven Spielberg, con guion de Steven Zaillian, el filme relata un período de la vida de Oskar Schindler, un empresario de etnia alemana que salvó de morir en el Holocausto a más de mil judíos polacos durante la Segunda Guerra Mundial empleándolos como trabajadores de sus fábricas.
+	</sinopsis>
 	<enlace></enlace>
 	<detalles>Drama histórico autorizado para mayores de 18 años</detalles>
 	<fichero_grafico></fichero_grafico>

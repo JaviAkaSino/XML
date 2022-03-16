@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE persona SYSTEM "persona.dtd">
+
+<persona>
+
+	<nombre>Miguel</nombre>
+	
+	<apellidos>Martínez Pérez</apellidos>
+	
+	<direccion>
+		<provincia>Málaga</provincia>
+		Calle Real 5
+		<poblacion>Estepona</poblacion>	
+	</direccion>
+	
+	<hombre/>
+	
+	<descendencia>
+		<hijo>Juan</hijo>		
+		<hijo>Pepe</hijo>	
+	</descendencia>
+	
+</persona>
+
+<!--Para utilizar dtd interno-->
+<!--!DOCTYPE persona [TODO]-->

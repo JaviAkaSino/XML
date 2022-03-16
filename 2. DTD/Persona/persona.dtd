@@ -1,0 +1,22 @@
+<!ELEMENT persona (nombre, apellidos, direccion, (hombre | mujer)?, descendencia?)> <!--'?' para OPCIONABILIDAD-->
+
+<!ELEMENT nombre (#PCDATA)> <!--CUALQUIER dato, incluído vacío-->
+<!ELEMENT apellidos (#PCDATA)>
+
+<!ELEMENT direccion (#PCDATA | provincia | poblacion)*> <!--Elemento MIXTO-->
+<!ELEMENT provincia (#PCDATA)>
+<!ELEMENT poblacion (#PCDATA)>
+
+<!ELEMENT hombre EMPTY> <!--EXIGE que sea un ELEMENTO VACÍO-->
+<!ELEMENT mujer EMPTY>
+
+<!ELEMENT descendencia (hijo*)> <!--El '*' permite DESDE 0 A INFINITOS elementos-->
+								<!--El '+' exige AL MENOS 1 elemento-->
+
+<!ELEMENT hijo (#PCDATA)>
+
+<!--El operador 'ó' es '|', para exigir uno u otro-->
+<!--(nombre | apellidos)-->
+
+<!--Para que de igual el orden, contemplar con '|' las combinaciones-->
+<!--((nombre, apellidos) | (apellidos, nombre))-->
