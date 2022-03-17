@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE liga[
+<!ELEMENT liga (partido*)>
+
+]>
+
+<liga>
+	<partido>
+		
+		<equipoLocal></equipoLocal>
+		<golesLocal></golesLocal>
+		
+		<equipoVisitante></equipoVisitante>
+		<golesVisitante></golesVisitante>
+		
+	</partido>
+	
+	<partido>
+		
+		<equipoLocal></equipoLocal>
+		<golesLocal></golesLocal>
+		
+		<equipoVisitante></equipoVisitante>
+		<golesVisitante></golesVisitante>
+		
+	</partido>
+	
+	<partido>
+		
+		<equipoLocal></equipoLocal>
+		<golesLocal></golesLocal>
+		
+		<equipoVisitante></equipoVisitante>
+		<golesVisitante></golesVisitante>
+		
+	</partido>
+	
+	
+</liga>

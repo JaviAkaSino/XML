@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE persona SYSTEM "persona.dtd">
+
+<persona dni="_00000000A">
+
+	<nombre>Miguel</nombre>
+	
+	<apellidos>Martínez Pérez</apellidos>
+	
+	<direccion>
+		<calle>Calle Real 5</calle>
+		<poblacion cod="16">Estepona</poblacion>	
+	</direccion>
+
+	<hombre/>
+</persona>
+

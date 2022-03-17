@@ -1,0 +1,37 @@
+<!ELEMENT persona (nombre, apellidos, direccion, (hombre | mujer)?)>
+
+<!ATTLIST persona dni ID #REQUIRED>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT direccion (calle, poblacion)>
+<!ELEMENT calle (#PCDATA)>
+<!ELEMENT poblacion (#PCDATA)>
+<!ELEMENT hombre EMPTY>
+<!ELEMENT mujer EMPTY>
+
+<!--ATTLIST para definir atributos-->
+<!--ATTLIST elemento atributo valor modificador-->
+<!ATTLIST poblacion 
+	cod CDATA #REQUIRED
+	habitantes NMTOKEN #IMPLIED>
+
+<!-- 
+
+MODIFICADORES ATRIBUTO
+	#IMPLIED: Puede aparecer o no
+	#FIXED "X": Si aparece el atributo, tendrá X valor 
+	#REQUIRED: Atributo obligatorio, aunque sea cadena vacía 
+	
+DATOS	
+	CDATA: #PCDATA
+	Enumeraciones: No tiene nombre, es la cadena (x|y|z)
+	NMTOKEN: Cumple con un nombre válido de ETIQUETA "e25", no "25e"
+	NMTOKENS: Cadena de NMTOKEN "xxx yyy"
+	ID: Es un valor ÚNICO. También ha de ser NMTOKEN "_00000000A
+	IDS: >1
+	IDREF: Un elemento que es clave en otro sitio
+	IDREFS: >1
+-->
+
+
