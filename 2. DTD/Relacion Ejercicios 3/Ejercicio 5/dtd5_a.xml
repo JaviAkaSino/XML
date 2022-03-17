@@ -2,37 +2,42 @@
 
 <!DOCTYPE liga[
 <!ELEMENT liga (partido*)>
+<!ELEMENT partido (equipoLocal, golesLocal, equipoVisitante, golesVisitante)>
+<!ELEMENT equipoLocal (#PCDATA)>
+<!ELEMENT golesLocal (#PCDATA)>
+<!ELEMENT equipoVisitante (#PCDATA)>
+<!ELEMENT golesVisitante (#PCDATA)>
 
 ]>
 
 <liga>
 	<partido>
 		
-		<equipoLocal></equipoLocal>
-		<golesLocal></golesLocal>
+		<equipoLocal>Nottingham Presa</equipoLocal>
+		<golesLocal>0</golesLocal>
 		
-		<equipoVisitante></equipoVisitante>
-		<golesVisitante></golesVisitante>
-		
-	</partido>
-	
-	<partido>
-		
-		<equipoLocal></equipoLocal>
-		<golesLocal></golesLocal>
-		
-		<equipoVisitante></equipoVisitante>
-		<golesVisitante></golesVisitante>
+		<equipoVisitante>Inter de Mitente</equipoVisitante>
+		<golesVisitante>1</golesVisitante>
 		
 	</partido>
 	
 	<partido>
 		
-		<equipoLocal></equipoLocal>
-		<golesLocal></golesLocal>
+		<equipoLocal>Vodka Juniors</equipoLocal>
+		<golesLocal>3</golesLocal>
 		
-		<equipoVisitante></equipoVisitante>
-		<golesVisitante></golesVisitante>
+		<equipoVisitante>Sparta da Risa</equipoVisitante>
+		<golesVisitante>3</golesVisitante>
+		
+	</partido>
+	
+	<partido>
+		
+		<equipoLocal>Water de Munich</equipoLocal>
+		<golesLocal>4</golesLocal>
+		
+		<equipoVisitante>Esteaua es del grifo</equipoVisitante>
+		<golesVisitante>2</golesVisitante>
 		
 	</partido>
 	
