@@ -1,0 +1,3 @@
+<!ELEMENT cancion (titulo, compositores, productores, sello, artista) >
+	<!ATTLIST cancion duracion CDATA #REQUIRED
+						anio CDATA #REQUIRED >

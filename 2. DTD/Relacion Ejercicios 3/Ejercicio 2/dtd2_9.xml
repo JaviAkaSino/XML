@@ -10,10 +10,10 @@
 ]>
 <mensajes>
  <mensaje>
- 	<de>Pepe (pepe@example.com)</de>
- 	<para>Juan (juan@example.com)</para>
- 	<hora>28/02/2011 17:48:23,61</hora>
- 	<texto>¿Hola, Juan, qué haces?</texto>
+	<de>Pepe (pepe@example.com)</de>
+	<para>Juan (juan@example.com)</para>
+	<hora>28/02/2011 17:48:23,61</hora>
+	<texto>¿Hola, Juan, qué haces?</texto>
  </mensaje>
  
  <mensaje>
