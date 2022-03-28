@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE Pedido [
+
+<!ELEMENT Pedido (Destino, Ordenante, Observaciones, Contenido)>
+	<!ATTLIST Pedido fecha CDATA #REQUIRED>
+	
+<!ELEMENT Destino (Nombre, Direccion, Ciudad, CodPostal)>
+<!ELEMENT Ordenante (Nombre, Direccion, Ciudad, CodPostal)>
+<!ELEMENT Nombre (#PCDATA)>
+<!ELEMENT Direccion (#PCDATA)>
+<!ELEMENT Ciudad (#PCDATA)>
+<!ELEMENT CodPostal (#PCDATA)>
+<!ELEMENT Observaciones (#PCDATA)>
+<!ELEMENT Contenido (Producto+)>
+<!ELEMENT Producto (Caracteristica*)>
+	<!ATTLIST Producto codprod CDATA #REQUIRED
+						cantidad CDATA #REQUIRED
+						nombre CDATA #REQUIRED
+						precio CDATA #REQUIRED>
+<!ELEMENT Caracteristica (#PCDATA)>
+
+]>
+
+<Pedido fecha="20 de octubre del 99">
+	<Destino>
+		<Nombre>Alicia Abad</Nombre>
+		<Direccion>Plaza de la Duquesa 12</Direccion>
+		<Ciudad>Albacete</Ciudad>
+		<CodPostal>05020</CodPostal>
+	</Destino>
+		
+	<Ordenante>
+		<Nombre>Roberto Movill</Nombre>
+		<Direccion>General Ricardos 56</Direccion>
+		<Ciudad>Madrid</Ciudad>
+		<CodPostal>28055</CodPostal>
+	</Ordenante>
+		
+	<Observaciones>modelo eléctrico</Observaciones>
+	
+	<Contenido>
+		<Producto codprod="872-AA" cantidad="1" nombre="Cortadora" precio="148.95">
+			<Caracteristica>Motor eléctrico</Caracteristica>
+		</Producto>
+		
+		<Producto codprod="926-FH" cantidad="3" nombre="Podadora" precio="7.98">
+		</Producto>
+	</Contenido>
+	
+</Pedido>

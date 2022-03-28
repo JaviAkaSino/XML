@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<!DOCTYPE Libro [
+
+	<!ELEMENT Libro (Titulo, Contenido, Copyright)>
+	<!ATTLIST Libro id CDATA #REQUIRED>
+	
+	<!ELEMENT Titulo (#PCDATA)>
+	
+	<!ELEMENT Contenido (Capitulo, Separacion?)+>
+		<!ELEMENT Capitulo (Tema, Seccion+)>
+		<!ATTLIST Capitulo materia CDATA #IMPLIED>
+	
+	<!ELEMENT Tema (#PCDATA)>
+	<!ELEMENT Seccion (#PCDATA)>
+	<!ATTLIST Seccion apartados CDATA #REQUIRED dificil CDATA #IMPLIED>
+	
+	<!ELEMENT Separacion EMPTY>
+	<!ELEMENT Copyright (#PCDATA)>
+
+]>
+
+
+<Libro id="1">
+	
+	<Titulo>El medallón perdido</Titulo>
+	
+	<Contenido>
+		<Capitulo materia ="Indroducir">
+			<Tema>Intro</Tema>
+			<Seccion apartados="1">1</Seccion>
+		</Capitulo>
+		
+		<Separacion/>
+		
+		<Capitulo>
+			<Tema>Cuerpo</Tema>
+			<Seccion apartados="3" >Cap1</Seccion>
+			<Seccion apartados="2" dificil="si">Cap2</Seccion>
+		</Capitulo>
+	</Contenido>
+	
+	<Copyright>Todos los derechos reservados</Copyright>
+	
+</Libro>

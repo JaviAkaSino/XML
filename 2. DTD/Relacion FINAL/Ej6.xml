@@ -1,3 +1,52 @@
-<!ELEMENT cancion (titulo, compositores, productores, sello, artista) >
-	<!ATTLIST cancion duracion CDATA #REQUIRED
-						anio CDATA #REQUIRED >
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE cancion [
+
+<!ENTITY % name "nombres, apellidos">
+	<!ELEMENT nombres (#PCDATA)>
+	<!ELEMENT apellidos (#PCDATA)>
+
+	<!ELEMENT cancion (titulo, compositores, productores, sello, artista) >
+		<!ATTLIST cancion duracion CDATA #REQUIRED
+							anio CDATA #REQUIRED >
+
+
+	<!ELEMENT titulo (#PCDATA)>
+	<!ELEMENT compositores (compositor+)>
+		<!ELEMENT compositor (nombres, apellidos)>
+	<!ELEMENT productores (productor+)>
+		<!ELEMENT productor (nombres, apellidos)>
+	<!ELEMENT sello (#PCDATA)>
+	<!ELEMENT artista (#PCDATA)>
+
+]>
+
+<cancion duracion="4:47" anio="2008">
+
+	<titulo>Give it 2 me</titulo>
+	
+	<compositores>
+		
+		<compositor>		
+			<nombres>Pharrell</nombres>
+			<apellidos>Williams</apellidos>			
+		</compositor>
+		
+	</compositores>
+	
+	<productores>	
+		<productor>
+			<nombres>Pharrell</nombres>
+			<apellidos>Williams</apellidos>	
+		</productor>
+	</productores>
+	
+	<sello>
+		Warner Bros. Records
+	</sello>
+	
+	<artista>
+		Maddona
+	</artista>
+
+</cancion>

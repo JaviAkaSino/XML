@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE html [
+
+<!ELEMENT html (head, body)>
+	<!ATTLIST html xmlns CDATA #REQUIRED>
+	
+	<!ELEMENT head (meta, title)>
+	
+		<!ELEMENT meta EMPTY>
+			<!ATTLIST meta http-equiv CDATA #REQUIRED
+							content CDATA #REQUIRED>
+		
+		<!ENTITY iacute "&#161;">
+		<!ELEMENT title (#PCDATA)>
+		
+		
+
+	
+	<!ELEMENT body (p*)>
+		<!ATTLIST body bgcolor NMTOKEN #IMPLIED>
+		
+		<!ELEMENT p (#PCDATA)>
+			<!ATTLIST p align NMTOKEN #IMPLIED>
+
+]>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		
+		<title>Documento sin t&iacute;tulo</title>
+	</head>
+	
+	<body bgcolor="red">
+		<p>Implementa el DTD asociado a este XML</p>
+		
+		<p align="center">resuelve el ejercicios </p>
+	</body>
+	
+</html>
