@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE libreta_de_direcciones [
+
+<!ELEMENT libreta_de_direcciones (cliente+)>
+
+<!ELEMENT cliente (nombre, apellidos, direccion)>
+	<!ATTLIST cliente id ID #REQUIRED>
+
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+
+
+]>
+
+
+<libreta_de_direcciones>
+
+	<cliente id="c1">
+	
+		<nombre></nombre>
+		<apellidos></apellidos>
+		<direccion></direccion>
+		
+	</cliente>
+	
+	<cliente id="c2">
+	
+		<nombre></nombre>
+		<apellidos></apellidos>
+		<direccion></direccion>
+		
+	</cliente>
+
+</libreta_de_direcciones>

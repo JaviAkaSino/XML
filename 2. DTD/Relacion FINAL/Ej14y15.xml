@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE banco_lorca [
+
+<!ELEMENT banco_lorca (sucursales, clientes)>
+
+<!ELEMENT sucursales (sucursal+)>
+<!ELEMENT clientes (cliente*)>
+
+<!ENTITY % id_re "ID #REQUIRED">
+
+
+<!ELEMENT sucursal (cuenta+)>
+	<!ATTLIST sucursal codigo ID #REQUIRED>
+	
+<!ELEMENT cuenta (domiciliacion*, cli+, domiciliacion*)+>
+	<!ATTLIST cuenta codigo ID #REQUIRED>
+
+<!ELEMENT domiciliacion EMPTY>
+	<!ATTLIST domiciliacion num ID #REQUIRED>
+
+<!ELEMENT cli EMPTY>
+	<!ATTLIST cli nif IDREF #REQUIRED
+					nivel (apoderado | titular) #REQUIRED>
+						
+						
+						
+<!ELEMENT cliente (#PCDATA | prestamo)*>
+	<!ATTLIST cliente nif ID #REQUIRED>
+
+<!ELEMENT prestamo (#PCDATA)>
+
+
+]>
+
+<banco_lorca>
+
+	<sucursales>
+	
+	
+		<sucursal codigo="s1">
+		
+			<cuenta codigo="c11">
+				<domiciliacion num="d123"/>
+				<cli nif="_00000000A" nivel="titular"/>
+				<domiciliacion num="d124"/>
+			</cuenta>
+			
+			
+			<cuenta codigo="c12">
+				<cli nif="_11111111B" nivel="titular"/>		
+				<domiciliacion num="d125"/>
+			</cuenta>
+
+		</sucursal>
+		
+		
+		<sucursal codigo="s2">
+		
+			<cuenta codigo="c21">
+				<cli nif="_11111111B" nivel="titular"/>
+				<domiciliacion num="d126"/>
+				<cli nif="_00000000A" nivel="apoderado"/>
+			</cuenta>
+
+		</sucursal>
+	
+	</sucursales>
+	
+	
+	<clientes>
+	
+		<cliente nif="_00000000A">
+			<prestamo>5000</prestamo>
+			<prestamo>2000</prestamo>
+		</cliente>
+
+		<cliente nif="_11111111B">
+			<prestamo>1000</prestamo>		
+		</cliente>
+	
+	</clientes>
+
+
+	
+
+</banco_lorca>

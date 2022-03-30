@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE motorsol [
+
+<!ELEMENT motorsol (plantilla, secciones, motores)>
+
+<!ELEMENT plantilla (empleado+)>
+<!ELEMENT secciones (seccion+)>
+<!ELEMENT motores (motor+)>
+
+<!ELEMENT empleado (#PCDATA)>
+	<!ATTLIST empleado id ID #REQUIRED
+					familiares CDATA #IMPLIED>
+
+<!ELEMENT seccion (responsable, mozo+)>
+	<!ATTLIST seccion num_sec ID #REQUIRED
+					tipo_motor CDATA #REQUIRED>
+					
+<!ELEMENT responsable EMPTY>
+	<!ATTLIST responsable id_resp ID #REQUIRED
+					id IDREF #REQUIRED>
+					
+<!ELEMENT mozo EMPTY>
+	<!ATTLIST mozo id IDREF #REQUIRED>
+	
+	
+<!ELEMENT motor (pieza+)>
+	<!ATTLIST motor codigo ID #REQUIRED
+					tipo CDATA #REQUIRED>
+					
+<!ELEMENT pieza (#PCDATA | componente)*> <!--(#PCDATA, componente*)-->
+	<!ATTLIST pieza ref ID #REQUIRED>
+
+<!ELEMENT componente (#PCDATA)>
+	<!ATTLIST componente ref ID #REQUIRED>
+
+
+
+]>
+
+<motorsol>
+
+	
+	<plantilla>
+		<empleado id="e111">Nombre</empleado>
+		<empleado id="e112" familiares="5">Nombre</empleado>
+		<empleado id="e113" familiares="3">Nombre</empleado>
+	</plantilla>
+	
+
+
+
+	<secciones>
+		<seccion num_sec="s1" tipo_motor="gti">
+		
+			<responsable id_resp="r11" id="e111"/>
+			
+			<mozo id="e112"/>
+			<mozo id="e113"/>
+			
+		</seccion>
+		
+		<seccion num_sec="s2" tipo_motor="dti">
+		
+			<responsable id_resp="r21" id="e113"/>
+			
+			<mozo id="e111"/>
+			
+		</seccion>
+	</secciones>
+
+
+
+
+	<motores>
+	
+		<motor codigo="m123" tipo="gti">
+		
+			<pieza ref="p01"> 
+				<componente ref="c01">
+				</componente>
+				<componente ref="c02">
+					Tuerca 75
+				</componente>
+			</pieza>
+		
+			<pieza ref="p02">
+				 Bugía
+			</pieza>	
+		
+		</motor>	
+	
+	</motores>
+	
+
+
+</motorsol>

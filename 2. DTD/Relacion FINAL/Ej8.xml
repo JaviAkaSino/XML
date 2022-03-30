@@ -11,7 +11,7 @@
 			<!ATTLIST meta http-equiv CDATA #REQUIRED
 							content CDATA #REQUIRED>
 		
-		<!ENTITY iacute "&#161;">
+		<!ENTITY iacute "í">
 		<!ELEMENT title (#PCDATA)>
 		
 		

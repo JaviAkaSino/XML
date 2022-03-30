@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE buzon_correos [
+
+<!ELEMENT buzon_correos (carta | paquete)*>
+
+<!ELEMENT carta (#PCDATA)>
+
+<!ELEMENT paquete (#PCDATA)>
+
+]>
+
+
+<buzon_correos>
+
+	<carta>
+		
+	</carta>
+	
+	<paquete>
+	
+	</paquete>
+	
+	<carta>
+		
+	</carta>
+
+</buzon_correos>
