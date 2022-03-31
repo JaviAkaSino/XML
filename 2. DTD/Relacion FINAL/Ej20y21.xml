@@ -10,7 +10,7 @@
 
 <!ELEMENT empleado (#PCDATA)>
 	<!ATTLIST empleado id ID #REQUIRED
-					familiares CDATA #IMPLIED>
+					a_cargo IDREFS #IMPLIED>
 
 <!ELEMENT seccion (responsable, mozo+)>
 	<!ATTLIST seccion num_sec ID #REQUIRED
@@ -43,8 +43,8 @@
 	
 	<plantilla>
 		<empleado id="e111">Nombre</empleado>
-		<empleado id="e112" familiares="5">Nombre</empleado>
-		<empleado id="e113" familiares="3">Nombre</empleado>
+		<empleado id="e112" a_cargo="e111">Nombre</empleado>
+		<empleado id="e113" a_cargo="e111 e112">Nombre</empleado>
 	</plantilla>
 	
 

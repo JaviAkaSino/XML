@@ -2,7 +2,11 @@
 
 <!DOCTYPE buzon_correos [
 
-<!ELEMENT buzon_correos (carta | paquete)*>
+<!ELEMENT buzon_correos (cartas, paquetes)>
+
+<!ELEMENT cartas (carta*)>
+
+<!ELEMENT paquetes (paquete*)>
 
 <!ELEMENT carta (#PCDATA)>
 
@@ -12,17 +16,32 @@
 
 
 <buzon_correos>
-
-	<carta>
+	
+	<cartas>
+	
+		<carta>
+			
+		</carta>
 		
-	</carta>
-	
-	<paquete>
-	
-	</paquete>
-	
-	<carta>
+		<carta>
+			
+		</carta>
 		
-	</carta>
+	</cartas>
+	
+	
+	
+	<paquetes>
+	
+		<paquete>
+	
+		</paquete>
+		
+		<paquete>
+	
+		</paquete>
+	
+	</paquetes>
+	
 
 </buzon_correos>
