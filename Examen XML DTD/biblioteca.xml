@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE biblioteca SYSTEM "biblioteca.dtd">
+
+<biblioteca>
+
+	<libros>
+	
+		<libro isbn="_1_55655_767_6" autores="_23456788P _23456787G" editorial="McGraw-Hill">
+		
+			<titulo>Fundamentos de bases de datos</titulo>
+			<precio moneda="euro">40</precio>
+			<fecpublicacion>2003</fecpublicacion>
+			
+			<revisiones>
+				<revision autor="_23456789N">
+					<valoracion>8.5</valoracion>
+					<comentario>Es un libro de texto básico</comentario>
+				</revision>
+			</revisiones>
+		</libro>
+		
+		
+		<libro isbn="_2_12345_678_9" autores="_23456788P _12345678A" editorial="ElBarcoDeVapor">
+		
+			<titulo>El medallón perdido</titulo>
+			<precio moneda="euro">22.50</precio>
+			<fecpublicacion>2015</fecpublicacion>
+			
+			<revisiones>
+			</revisiones>
+		</libro>
+		
+		
+		<libro isbn="_3_45654_758_1" autores="_23456789N" editorial="Sintesis">
+		
+			<titulo>Lo que el viento se llevó</titulo>
+			<precio moneda="euro">15</precio>
+			<fecpublicacion>2020</fecpublicacion>
+			
+			<revisiones>
+				<revision autor="_23456788P">
+					<valoracion>7</valoracion>
+					<comentario>Libro entretenido</comentario>
+				</revision>
+				
+				<revision autor="_23456787G">
+					<valoracion>6</valoracion>
+				</revision>
+				
+				<revision autor="_12345678A">
+					<valoracion>9</valoracion>
+					<comentario>Es un libro apasionante</comentario>
+				</revision>
+			</revisiones>
+		</libro>
+	
+	
+	</libros>
+	
+	
+	
+	<autores>
+	
+		<autor nif="_23456788P">
+			<nombre>Abraham</nombre>
+			<apellidos>Silberschatz</apellidos>
+			<email>silbers@hotmail.com </email>
+		</autor>
+		
+		<autor nif="_23456787G">
+			<nombre>Henry</nombre>
+			<apellidos>Korth</apellidos>
+			<email>korth@hotmail.com</email>
+		</autor>
+		
+		<autor nif="_23456789N">
+			<nombre>James</nombre>
+			<apellidos>Smith</apellidos>
+			
+		</autor>
+		
+		<autor nif="_12345678A">
+			<nombre>Ana</nombre>
+			<apellidos>Alcolea</apellidos>
+			<email>anaalcolea@hotmail.com</email>
+		</autor>
+		
+	</autores>
+	
+	
+	
+	<editoriales>
+	
+		<editorial nombre="McGraw-Hill">
+			<oficina>Av. Santander s/n</oficina>
+			<web>http://www.mcgrawhill.es</web>
+		</editorial>
+		
+		<editorial nombre="ElBarcoDeVapor">
+			<oficina>Av. España 58</oficina>
+			<web>http://www.elbarcodevapor.es</web>
+		</editorial>
+		
+		<editorial nombre="Sintesis">
+			<oficina>Av. del Carmen 65</oficina>
+			<web>http://www.sintesis.es</web>
+		</editorial>
+		
+	</editoriales>
+
+</biblioteca>
+
+
