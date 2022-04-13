@@ -41,5 +41,5 @@
 				n_ped ID #REQUIRED
 				iva (16) #REQUIRED 
 				f_pago (efectivo | tarjeta | transferencia) #REQUIRED
-				moneda CDATA #FIXED "euro"> <!-- Si es euro sale-->
+				moneda CDATA #FIXED "euro"> <!-- Si sale es euro-->
 
