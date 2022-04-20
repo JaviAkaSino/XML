@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<notas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="notas.xsd">
+
+
+	<nota>
+
+		<de>Juan</de>
+		<para>Pedro</para>
+
+		<fecha>2022-04-20</fecha>
+
+		<contenido>A las 7:00 pon despertador para ir al cole</contenido>
+		
+	</nota>
+
+	<nota>
+
+		Juan Pedro <!--Es un elemento complejo y MIXTO-->	
+		<de>Juan</de>
+		<para>Pedro</para>
+
+		<titulo>Recordatorio</titulo>
+
+		<contenido>A las 7:00 pon despertador para ir al cole</contenido>
+		
+	</nota>
+
+</notas>
