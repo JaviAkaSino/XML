@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="persona" type="tipoPersona" />
+    <xs:complexType name="tipoPersona">
+
+        <xs:sequence>
+            <xs:element name="datos" type="info" />
+            <xs:element name="precio" type="tipoPrecio" minOccurs="0" />
+        </xs:sequence>
+
+        <xs:attribute name="nacimiento" type="xs:date" />
+
+    </xs:complexType>
+
+    <xs:complexType name="info">
+        <xs:sequence>
+            <xs:element name="nombre" type="tipoNombre" />
+            <xs:element name="apellidos" type="tipoApellidos" />
+            <xs:element name="dni" type="tipoDni" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="tipoNombre">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Pepe" />
+            <xs:enumeration value="Juan" />
+            <xs:enumeration value="María" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoDni">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:minInclusive value="10000000" />
+            <xs:maxInclusive value="99999999" />
+
+            <!--    <xs:pattern value="[0-9]{8}-[a-zA-Z]"	-->
+
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoApellidos">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="15" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="tipoPrecio" mixed="true">
+        <xs:attribute name="moneda" type="tipoMoneda" />
+    </xs:complexType>
+    
+    <xs:simpleType name="tipoMoneda">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="euro|dólar|yen" />
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>
