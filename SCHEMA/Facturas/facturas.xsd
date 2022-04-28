@@ -18,14 +18,23 @@
 
     <xs:complexType name="tipoDatosCliente">
         <xs:sequence>
-            <xs:element name="nombre" type="xs:string" />
-            <xs:element name="apellido" type="xs:string" maxOccurs="2" />
+            
+            <xs:group ref="datos"/>
             <xs:element name="dni" type="tipoDni" />
-            <xs:element name="tfno" type="tipoTfno" />
+            <xs:element name="tfno" type="tipoTfno" minOccurs="0" />
         </xs:sequence>
 
-        <xs:attribute name="ident" type="xs:ID" />
+        <xs:attribute name="ident" type="xs:ID" use="required" />
     </xs:complexType>
+
+
+    <!--GRUPO-->
+    <xs:group name="datos">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string" />
+            <xs:element name="apellido" type="xs:string" maxOccurs="2" />
+        </xs:sequence>
+    </xs:group>
 
     <xs:simpleType name="tipoDni">
         <xs:restriction base="xs:string">
@@ -54,12 +63,12 @@
             <xs:element name="importe_total" type="tipoImporteTotal" />
         </xs:sequence>
 
-        <xs:attribute name="moneda" type="tipoMoneda" />
+        <xs:attribute name="moneda" type="xs:string" use="required" fixed="euro" />
     </xs:complexType>
 
     <xs:simpleType name="tipoFormaPago">
         <xs:restriction base="xs:string">
-            <xs:whiteSpace value="collapse"/>
+            <xs:whiteSpace value="collapse" />
             <xs:enumeration value="Efectivo" />
             <xs:enumeration value="Tarjeta" />
         </xs:restriction>
@@ -69,12 +78,6 @@
         <xs:restriction base="xs:decimal">
             <xs:totalDigits value="7" />
             <xs:fractionDigits value="2" />
-        </xs:restriction>
-    </xs:simpleType>
-
-    <xs:simpleType name="tipoMoneda">
-        <xs:restriction base="xs:string">
-            <xs:enumeration value="euro" />
         </xs:restriction>
     </xs:simpleType>
 
@@ -103,35 +106,35 @@
             <xs:element name="actores" type="tipoActores" />
         </xs:sequence>
 
-        <xs:attribute name="id_pelicula" type="xs:ID" />
+        <xs:attribute name="id_pelicula" type="xs:ID" use="required" />
         <xs:attribute name="valoracion" type="tipoValoracion" />
 
     </xs:complexType>
 
     <xs:simpleType name="tipoValoracion">
         <xs:restriction base="xs:string">
-            <xs:pattern value="mala|regular|buena|buenísima"/>
+            <xs:pattern value="mala|regular|buena|buenísima" />
         </xs:restriction>
     </xs:simpleType>
 
     <xs:simpleType name="tipoDuracion">
-        <xs:restriction base="xs:integer">
-            <xs:totalDigits value="3"/>
+        <xs:restriction base="xs:positiveInteger">
+            <xs:totalDigits value="3" />
         </xs:restriction>
     </xs:simpleType>
-    
+
 
     <xs:complexType name="tipoActores">
         <xs:sequence>
-            <xs:element name="actor" type="tipoActor" maxOccurs="unbounded"/>
+            <xs:element name="actor" type="tipoActor" minOccurs="3" maxOccurs="3" />
         </xs:sequence>
     </xs:complexType>
 
+    <!--Al ser el grupo datos una secuencia, podemos eliminar que actor tambien lo es-->
     <xs:complexType name="tipoActor">
-        <xs:sequence>
-            <xs:element name="nombre" type="xs:string" />
-            <xs:element name="apellido" type="xs:string" maxOccurs="2" />
-        </xs:sequence>
+        
+            <xs:group ref="datos"/>
+        
     </xs:complexType>
 
 </xs:schema>
