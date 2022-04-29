@@ -15,15 +15,14 @@
 
     <persona>
         <nombre>María López</nombre>
-        <nacimiento dia="10" mes="Abril" anyo="1982"/>
-        <direccion>
+        <direccion num="1">
             <calle>Roncato, 1</calle>
             <poblacion>Illescas</poblacion>
             <provincia>Toledo</provincia>
             <cpostal>45200</cpostal>
         </direccion>
 
-        <direccion>
+        <direccion num="2">
             <calle>Paseo de la Esperanza 15, 1º A</calle>
             <poblacion>Madrid</poblacion>
             <provincia>Madrid</provincia>
