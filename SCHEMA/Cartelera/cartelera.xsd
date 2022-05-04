@@ -25,21 +25,17 @@
             <xs:element name="director" type="xs:string"/>
             <xs:element name="reparto" type="tipoReparto"/>
 
-            <xs:group ref="datos" minOccurs="0"/>
-
+            <xs:sequence minOccurs="0">
+                <xs:element name="web" type="xs:string"/>
+                <xs:element name="cartel" type="xs:string"/>
+            </xs:sequence>
+            
         </xs:sequence>
 
         <xs:attribute name="codigo" type="xs:ID" use="required"/>
         <xs:attribute name="duracion" type="xs:positiveInteger" use="required"/>
         <xs:attribute name="anyo" type="xs:positiveInteger" default="2003" use="optional"/>
     </xs:complexType>
-
-    <xs:group name="datos">
-        <xs:sequence>
-            <xs:element name="web" type="xs:string"/>
-            <xs:element name="cartel" type="xs:string"/>
-        </xs:sequence>
-    </xs:group>
 
     <xs:complexType name="tipoClasificacion">
         <xs:attribute name="edad" type="tipoEdad"/>
