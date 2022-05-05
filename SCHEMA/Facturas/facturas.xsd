@@ -17,8 +17,7 @@
     </xs:complexType>
 
     <xs:complexType name="tipoDatosCliente">
-        <xs:sequence>
-            
+        <xs:sequence>       
             <xs:group ref="datos"/>
             <xs:element name="dni" type="tipoDni" />
             <xs:element name="tfno" type="tipoTfno" minOccurs="0" />

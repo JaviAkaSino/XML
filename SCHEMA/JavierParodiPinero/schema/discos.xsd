@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="discos" type="tipoDiscos" />
+
+    <xs:complexType name="tipoDiscos">
+        <xs:sequence>
+            <xs:element name="grupo" type="tipoGrupo" maxOccurs="unbounded" />
+            <xs:element name="disco" type="tipoDisco" maxOccurs="unbounded" />
+        </xs:sequence>
+
+        <xs:attribute name="tienda" type="xs:string" fixed="Discos 3000" />
+
+    </xs:complexType>
+
+    <xs:complexType name="tipoGrupo">
+        <xs:sequence>
+            <xs:element name="nombre" type="tipoTexto" />
+            <xs:element name="miembro" type="tipoTexto" minOccurs="3" maxOccurs="3" />
+            <xs:element name="nacionalidad" type="tipoTexto" minOccurs="0" />
+
+            <xs:choice minOccurs="0">
+                <xs:group ref="dirElect" />
+                <xs:group ref="dirPostal" />
+            </xs:choice>
+        </xs:sequence>
+
+        <xs:attribute name="nom" type="xs:ID" use="required" />
+
+    </xs:complexType>
+
+    <xs:group name="dirElect">
+        <xs:sequence>
+            <xs:element name="web" type="tipoTexto" />
+            <xs:element name="email" type="tipoTexto" />
+        </xs:sequence>
+    </xs:group>
+
+    <xs:group name="dirPostal">
+        <xs:sequence>
+            <xs:element name="calle" type="tipoTexto" />
+            <xs:element name="localidad" type="tipoTexto" />
+        </xs:sequence>
+    </xs:group>
+
+
+    <xs:complexType name="tipoDisco">
+        <xs:sequence>
+            <xs:element name="interprete" type="tipoInterprete" />
+            <xs:element name="titulo" type="tipoTexto" />
+            <xs:element name="discografica" type="tipoDiscografica" minOccurs="0" />
+            <xs:element name="anio" type="tipoAnio" />
+            <xs:element name="stock" type="tipoStock" />
+        </xs:sequence>
+
+        <xs:attribute name="precio" type="tipoPrecio" use="required" />
+
+    </xs:complexType>
+
+    <xs:complexType name="tipoInterprete">
+        <xs:attribute name="grupo" type="xs:IDREF" />
+    </xs:complexType>
+
+    <xs:simpleType name="tipoDiscografica">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="Sony|CBS|SIRE|OTRAS" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="tipoAnio" mixed="true">
+        <xs:attribute name="mes" type="tipoMes" />
+    </xs:complexType>
+
+    <xs:simpleType name="tipoMes">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoStock">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0" />
+            <xs:maxInclusive value="200" />
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:simpleType name="tipoTexto">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="50" />
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:simpleType name="tipoPrecio">
+        <xs:restriction base="xs:decimal">
+            <xs:minExclusive value="0" />
+            <xs:maxInclusive value="99" />
+            <xs:totalDigits value="4" />
+            <xs:fractionDigits value="2" />
+        </xs:restriction>
+    </xs:simpleType>
+
+
+</xs:schema>
