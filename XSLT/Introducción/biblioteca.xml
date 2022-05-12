@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="biblioteca.xsl"?>
-<!DOCTYPE biblioteca SYSTEM "biblioteca.dtd">
+<?xml-stylesheet type="text/xsl" href="transformacion1.xsl"?>
 <biblioteca>
     <libro>
         <titulo>La vida está en otra parte</titulo>
