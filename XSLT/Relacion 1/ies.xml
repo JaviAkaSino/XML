@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="ejercicio8.xsl"?>
+<?xml-stylesheet type="text/xsl" href="ejercicio1.xsl"?>
 <ies nombre="IES Mar de Alborán" web="http://www.maralboran.com/">
     <ciclos>
         <ciclo id="ASIR">
-            <nombre>Administración de Sistemas Informáticos en
-Red</nombre>
+            <nombre>Administración de Sistemas Informáticos en Red</nombre>
             <grado>Superior</grado>
             <decretoTitulo año="2009" />
         </ciclo>
