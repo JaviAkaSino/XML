@@ -42,9 +42,9 @@
                             </xsl:when>
 
                             <xsl:otherwise><td><xsl:value-of select="titulo"/></td></xsl:otherwise>
+                        
                         </xsl:choose>    
                         
-                            
                         <td>
                             <span class="cursiva"><xsl:value-of select="@año"/></span>  
                         </td>

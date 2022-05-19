@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="ejercicio6.xsl" type="text/xsl"?>
+
+<tienda>
+    <nombre>La tiendecilla</nombre>
+    <telefono>953 87 12 23</telefono>
+    <producto>
+        <codigo>92</codigo>
+        <cantidad>10</cantidad>
+        <articulo>Radio-Casette</articulo>
+        <precio>150€</precio>
+    </producto>
+    <producto>
+        <codigo>101</codigo>
+        <cantidad>3</cantidad>
+        <articulo>Sofá</articulo>
+        <precio>300€</precio>
+    </producto>
+    <producto>
+        <codigo>103</codigo>
+        <cantidad>50</cantidad>
+        <articulo>Reloj Cocina</articulo>
+        <precio>500€</precio>
+    </producto>
+    <producto>
+        <codigo>150</codigo>
+        <cantidad>45</cantidad>
+        <articulo>Armario</articulo>
+        <precio>100€</precio>
+    </producto>
+    <producto>
+        <codigo>138</codigo>
+        <cantidad>23</cantidad>
+        <articulo>Espejo</articulo>
+        <precio>350€</precio>
+    </producto>
+</tienda>
