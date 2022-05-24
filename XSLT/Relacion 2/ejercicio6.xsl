@@ -21,6 +21,7 @@
                     <tr><th>Título</th></tr>
                     <xsl:for-each select="catalogo/cds/cd">
                         <xsl:choose>
+                            
                             <xsl:when test="año &lt; 2000">
                                 <tr><td><span class="rojo"><xsl:value-of select="titulo"/></span></td></tr>
                             </xsl:when>
@@ -32,6 +33,7 @@
                             <xsl:otherwise>
                                 <tr><td><xsl:value-of select="titulo"/></td></tr>
                             </xsl:otherwise>
+
                         </xsl:choose>                        
                     </xsl:for-each>
                 </table>

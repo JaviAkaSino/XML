@@ -12,10 +12,16 @@
             </head>
             <body>
                 <h1><xsl:value-of select="ies/@nombre"/></h1>
-                <p>Página web: <a href="#">
-                    <xsl:attribute name="href"><xsl:value-of select="ies/@web"/></xsl:attribute>
-                    <xsl:value-of select="ies/@web"/> 
-                </a></p>
+                <p>Página web: 
+                    <a href="#">
+
+                        <xsl:attribute name="href">
+                            <xsl:value-of select="ies/@web"/>
+                        </xsl:attribute>
+
+                        <xsl:value-of select="ies/@web"/> 
+                    </a>
+                </p>
                 <table>
                     <tr>
                         <th>Nombre del ciclo</th>

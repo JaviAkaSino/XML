@@ -23,6 +23,7 @@
                         <th>Código</th>
                         <th>Artículo</th>
                         <th>Cantidad</th>
+                        <th>Imagen</th>
                     </tr>
                     <xsl:for-each select="tienda/producto">
                     <xsl:sort select="articulo"/>
@@ -50,6 +51,18 @@
                             </td>
 
                             <td><xsl:value-of select="cantidad"/></td>
+
+                            <td>
+                                <xsl:element name="img">
+                                    
+                                    <xsl:attribute name="src">
+                                        <xsl:value-of select="imagen"/>
+                                    </xsl:attribute>
+
+                                    <xsl:attribute name="height">100</xsl:attribute>
+                                </xsl:element>
+                            </td>
+
                         </tr>
                     </xsl:for-each>
                 </table>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="ejercicio6.xsl" type="text/xsl"?>
+<?xml-stylesheet href="ejercicio7.xsl" type="text/xsl"?>
 
 <tienda>
     <nombre>La tiendecilla</nombre>
@@ -8,30 +8,35 @@
         <codigo>92</codigo>
         <cantidad>10</cantidad>
         <articulo>Radio-Casette</articulo>
-        <precio>150€</precio>
+        <precio>50</precio>
+        <imagen>Imágenes/radio.png</imagen>
     </producto>
     <producto>
         <codigo>101</codigo>
         <cantidad>3</cantidad>
         <articulo>Sofá</articulo>
-        <precio>300€</precio>
+        <precio>3000</precio>
+        <imagen>Imágenes/sofa.png</imagen>
     </producto>
     <producto>
         <codigo>103</codigo>
         <cantidad>50</cantidad>
         <articulo>Reloj Cocina</articulo>
-        <precio>500€</precio>
+        <precio>500</precio>
+        <imagen>Imágenes/reloj.png</imagen>
     </producto>
     <producto>
         <codigo>150</codigo>
         <cantidad>45</cantidad>
         <articulo>Armario</articulo>
-        <precio>100€</precio>
+        <precio>100</precio>
+        <imagen>Imágenes/armario.png</imagen>
     </producto>
     <producto>
         <codigo>138</codigo>
         <cantidad>23</cantidad>
         <articulo>Espejo</articulo>
-        <precio>350€</precio>
+        <precio>350</precio>
+        <imagen>Imágenes/espejo.png</imagen>
     </producto>
 </tienda>
