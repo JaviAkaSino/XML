@@ -18,9 +18,12 @@
             </head>
             <body>
                 <table>
+                    <tr>
+                        <th colspan="2">Artículos</th>
+                    </tr>
                     <xsl:for-each select="tienda/producto">
                         <tr>
-                            <th>Artículos de mi tienda</th>
+                            <td>Artículos de mi tienda</td>
                             <td><xsl:value-of select="articulo"/></td>
                         </tr>
                     </xsl:for-each>

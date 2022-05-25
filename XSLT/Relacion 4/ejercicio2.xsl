@@ -9,6 +9,7 @@
             </head>
             <body>
                     <xsl:for-each select="horario/dia">
+                    <xsl:sort select="numdia"/>
                         
                             <h4>
                             <xsl:choose>

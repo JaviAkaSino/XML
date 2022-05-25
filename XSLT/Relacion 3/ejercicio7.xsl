@@ -53,14 +53,13 @@
                             <td><xsl:value-of select="cantidad"/></td>
 
                             <td>
-                                <xsl:element name="img">
+                                <img>
                                     
-                                    <xsl:attribute name="src">
-                                        <xsl:value-of select="imagen"/>
+                                    <xsl:attribute name="src">Imágenes/<xsl:value-of select="imagen"/>
                                     </xsl:attribute>
 
                                     <xsl:attribute name="height">100</xsl:attribute>
-                                </xsl:element>
+                                </img>
                             </td>
 
                         </tr>

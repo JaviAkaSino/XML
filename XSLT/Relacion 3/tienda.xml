@@ -9,34 +9,34 @@
         <cantidad>10</cantidad>
         <articulo>Radio-Casette</articulo>
         <precio>50</precio>
-        <imagen>Imágenes/radio.png</imagen>
+        <imagen>radio.png</imagen>
     </producto>
     <producto>
         <codigo>101</codigo>
         <cantidad>3</cantidad>
         <articulo>Sofá</articulo>
         <precio>3000</precio>
-        <imagen>Imágenes/sofa.png</imagen>
+        <imagen>sofa.png</imagen>
     </producto>
     <producto>
         <codigo>103</codigo>
         <cantidad>50</cantidad>
         <articulo>Reloj Cocina</articulo>
         <precio>500</precio>
-        <imagen>Imágenes/reloj.png</imagen>
+        <imagen>reloj.png</imagen>
     </producto>
     <producto>
         <codigo>150</codigo>
         <cantidad>45</cantidad>
         <articulo>Armario</articulo>
         <precio>100</precio>
-        <imagen>Imágenes/armario.png</imagen>
+        <imagen>armario.png</imagen>
     </producto>
     <producto>
         <codigo>138</codigo>
         <cantidad>23</cantidad>
         <articulo>Espejo</articulo>
         <precio>350</precio>
-        <imagen>Imágenes/espejo.png</imagen>
+        <imagen>espejo.png</imagen>
     </producto>
 </tienda>
